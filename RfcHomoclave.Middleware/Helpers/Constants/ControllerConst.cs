@@ -9,5 +9,6 @@
 
         public const string RfcHomoclaveRoute = "rfc-homoclave";
         public const string RfcHomoclaveName = "RFC";
+        public const string GenerateRfcHomoclaveName = "generate";
     }
 }

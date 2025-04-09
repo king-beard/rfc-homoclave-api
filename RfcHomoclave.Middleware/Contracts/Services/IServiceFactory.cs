@@ -2,5 +2,6 @@
 {
     public interface IServiceFactory
     {
+        IRfcHomoclaveService RfcHomoclaveService { get; }
     }
 }
