@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RfcHomoclave.API", "RfcHomoclave.API\RfcHomoclave.API.csproj", "{BCE27793-8A65-46B5-B2D4-9FBAF1AD6DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RfcHomoclave.Service", "RfcHomoclave.Service\RfcHomoclave.Service.csproj", "{FCB49C88-835E-4948-AE27-E8D25E98D686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RfcHomoclave.Middleware", "RfcHomoclave.Middleware\RfcHomoclave.Middleware.csproj", "{0A053C86-413B-412F-BB73-CE6074C8877E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE27793-8A65-46B5-B2D4-9FBAF1AD6DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE27793-8A65-46B5-B2D4-9FBAF1AD6DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE27793-8A65-46B5-B2D4-9FBAF1AD6DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE27793-8A65-46B5-B2D4-9FBAF1AD6DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB49C88-835E-4948-AE27-E8D25E98D686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB49C88-835E-4948-AE27-E8D25E98D686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB49C88-835E-4948-AE27-E8D25E98D686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB49C88-835E-4948-AE27-E8D25E98D686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A053C86-413B-412F-BB73-CE6074C8877E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A053C86-413B-412F-BB73-CE6074C8877E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A053C86-413B-412F-BB73-CE6074C8877E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A053C86-413B-412F-BB73-CE6074C8877E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
