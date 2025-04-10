@@ -16,11 +16,12 @@ namespace RfcHomoclave.API.Controllers.rfc_homoclave
     {
 
         /// <summary>
-        /// Test if service is work return date to now, and version about service
+        /// Test if service is work return date to now, and version about service.
         /// </summary>
-        /// <returns></returns>
-        /// <Response code="200">Show Ok(200)</Response>
-        /// <Response code="500">Show the error data with the exception code</Response>
+        /// <param name="item"></param>
+        /// <returns>A newly created TodoItem</returns>
+        /// <response code="200">Show Ok(200)</response>
+        /// <response code="500">Show the error data with the exception code</response>
         [AllowAnonymous]
         [HttpGet(ControllerConst.Test)]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -49,13 +50,14 @@ namespace RfcHomoclave.API.Controllers.rfc_homoclave
         }
 
         /// <summary>
-        /// Test if service is work return date to now, and version about service
+        /// Creates a TodoItem.
         /// </summary>
-        /// <returns></returns>
-        /// <Response code="200">Show Ok(200)</Response>
-        /// <Response code="500">Show the error data with the exception code</Response>
+        /// <param name="item"></param>
+        /// <returns>A newly created TodoItem</returns>
+        /// <response code="200">Show Ok(200)</response>
+        /// <response code="500">Show the error data with the exception code</response>
         [HttpPost(ControllerConst.GenerateRfcHomoclaveName)]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Res.RfcHomoclaveResDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(Res.BadRequestDto), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(Res.FunctionalErrorMessageDto), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(Res.CriticalErrorMessageDto), StatusCodes.Status500InternalServerError)]
