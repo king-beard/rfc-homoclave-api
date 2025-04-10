@@ -40,11 +40,11 @@ namespace RfcHomoclave.API.Controllers.rfc_homoclave
                 if (capex.Message.Contains(MessageServices.OKResponseGenerate204))
                     Result = NoContent();
                 else
-                    Result = Conflict(new Res.FunctionalErrorMessageDto { Origin = ControllerConst.OriginService, Message = capex.Message });
+                    Result = Conflict(new Res.FunctionalErrorMessageDto(ControllerConst.OriginService, capex.Message));
             }
             catch (Exception ex)
             {
-                Result = StatusCode(StatusCodes.Status500InternalServerError, new Res.CriticalErrorMessageDto { Origin = ControllerConst.OriginService, Message = new[] { MessageServices.InternalServerError }, TrackingCode = ex.Message });
+                Result = StatusCode(StatusCodes.Status500InternalServerError, new Res.CriticalErrorMessageDto(ControllerConst.OriginService, [MessageServices.InternalServerError], ex.Message));
             }
             return Result;
         }
@@ -74,11 +74,11 @@ namespace RfcHomoclave.API.Controllers.rfc_homoclave
                 if (capex.Message.Contains(MessageServices.OKResponseGenerate204))
                     Result = NoContent();
                 else
-                    Result = Conflict(new Res.FunctionalErrorMessageDto { Origin = ControllerConst.OriginService, Message = capex.Message });
+                    Result = Conflict(new Res.FunctionalErrorMessageDto ( ControllerConst.OriginService, capex.Message ));
             }
             catch (Exception ex)
             {
-                Result = StatusCode(StatusCodes.Status500InternalServerError, new Res.CriticalErrorMessageDto { Origin = ControllerConst.OriginService, Message = [MessageServices.InternalServerError], TrackingCode = ex.Message });
+                Result = StatusCode(StatusCodes.Status500InternalServerError, new Res.CriticalErrorMessageDto(ControllerConst.OriginService, [MessageServices.InternalServerError], ex.Message));
             }
             return Result;
         }

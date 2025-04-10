@@ -3,13 +3,11 @@ using RfcHomoclave.Middleware.Messages;
 
 namespace RfcHomoclave.Middleware.Dtos.Common.Response
 {
-    public class FunctionalErrorMessageDto
-    {
+    public record FunctionalErrorMessageDto
+    (
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
-        public string Origin { get; set; }
-
+        string Origin,
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
-        public string Message { get; set; }
-
-    }
+        string Message
+    );
 }

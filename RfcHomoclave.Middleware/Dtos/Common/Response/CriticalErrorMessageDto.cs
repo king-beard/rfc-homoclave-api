@@ -1,16 +1,15 @@
-using System.ComponentModel.DataAnnotations;
 using RfcHomoclave.Middleware.Messages;
+using System.ComponentModel.DataAnnotations;
 
 namespace RfcHomoclave.Middleware.Dtos.Common.Response
 {
-    public class CriticalErrorMessageDto
-    {
+    public record CriticalErrorMessageDto
+    (
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
-        public string Origin { get; set; }
-
+        string Origin,
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
-        public IEnumerable<string> Message { get; set; }
+        IEnumerable<string> Message,
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
-        public string TrackingCode { get; set; }
-    }
+        string TrackingCode
+    );
 }

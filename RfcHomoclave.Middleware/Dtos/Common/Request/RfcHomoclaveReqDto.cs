@@ -12,7 +12,7 @@ namespace RfcHomoclave.Middleware.Dtos.Common.Request
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
          string MothersLastName,
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
-         string BirthdayDate ,
+         string BirthdayDate,
         [Required(ErrorMessageResourceName = nameof(MessagesDataAnnotations.Required), ErrorMessageResourceType = typeof(MessagesDataAnnotations))]
          string PersonType
     );
